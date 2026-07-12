@@ -1,180 +1,241 @@
-# KTMI — Komunitas Talenta Mahasiswa Indonesia
+<div align="center">
 
-> Platform digital untuk mengelola keanggotaan, komunitas, minat bakat, pelatihan, dan lomba talenta mahasiswa di lingkungan **LLDIKTI Wilayah XVII**.
+<img src="https://ktmi.my.id/images/logo/logo_KTMI2.png" width="140" alt="Logo KTMI" />
 
-**Production:** [https://ktmi.my.id](https://ktmi.my.id)
+# 🎓 KTMI — Komunitas Talenta Mahasiswa Indonesia
 
----
+**Platform digital talenta mahasiswa untuk LLDIKTI Wilayah XVII**
 
-## Tentang Aplikasi
+[![Website](https://img.shields.io/badge/🌐_Live-ktmi.my.id-2563eb?style=for-the-badge)](https://ktmi.my.id)
+[![Stack](https://img.shields.io/badge/⚛️_React-19-61dafb?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
+[![Backend](https://img.shields.io/badge/🟢_Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
+[![Database](https://img.shields.io/badge/🐘_PostgreSQL-15-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org)
 
-**KTMI (Komunitas Talenta Mahasiswa Indonesia)** adalah sistem informasi berbasis web yang dirancang untuk mendigitalisasi pengelolaan talenta mahasiswa. Aplikasi ini menghubungkan mahasiswa, admin kampus, Training Community (TC), dan super administrator dalam satu ekosistem terpadu.
+*Mengelola keanggotaan · komunitas · minat bakat · pelatihan · lomba talenta*
 
-Melalui KTMI, mahasiswa dapat:
+[🚀 Kunjungi Aplikasi](https://ktmi.my.id) · [📖 Tentang](#-tentang-aplikasi) · [👥 Peran](#-peran-pengguna) · [⚙️ Cara Kerja](#%EF%B8%8F-bagaimana-aplikasi-berjalan)
 
-- Mendaftar dan memiliki **Kartu Tanda Anggota (KTA)** digital dengan QR verifikasi
-- Bergabung dengan **komunitas** berbasis minat bakat
-- Mencatat **absensi** kegiatan training
-- Mengajukan **minat bakat** dan mengikuti **LTMI** (Liga Talenta Mahasiswa Indonesia)
-- Berdiskusi di **forum** internal
-
-Bagi pengelola kampus dan LLDIKTI, KTMI menyediakan dashboard untuk validasi pengajuan, pengelolaan data mahasiswa, proposal lomba, jadwal training, laporan kegiatan, serta administrasi sistem secara terpusat.
+</div>
 
 ---
 
-## Peran Pengguna
+## 📌 Tentang Aplikasi
 
-| Peran | Deskripsi Singkat |
-|-------|-------------------|
-| **Mahasiswa** | Profil, KTA, komunitas, absensi, pengajuan minat bakat, pendaftaran LTMI, forum |
-| **Admin Kampus** | Kelola mahasiswa & komunitas kampus, ajukan LTMI, validasi pengajuan, monitoring training |
-| **Training Community (TC)** | Jadwal training, absensi, e-reporting, permintaan keluar komunitas, monitoring LTMI |
-| **Super Administrator** | Kelola user, PTS, LTMI, approval, TC, prestasi, minat bakat, laporan sistem |
+**KTMI (Komunitas Talenta Mahasiswa Indonesia)** adalah sistem informasi berbasis web yang mendigitalisasi pengelolaan talenta mahasiswa. Aplikasi ini menghubungkan **mahasiswa**, **admin kampus**, **Training Community (TC)**, dan **super administrator** dalam satu ekosistem terpadu.
 
-Setiap peran memiliki dashboard dan menu sidebar yang disesuaikan dengan tanggung jawabnya.
+### 🎯 Untuk Mahasiswa
 
----
+| | Fitur |
+|---|------|
+| 🪪 | **KTA Digital** — kartu anggota + QR verifikasi |
+| 👥 | **Komunitas** — bergabung sesuai minat bakat |
+| ✅ | **Absensi** — kehadiran kegiatan training |
+| ⭐ | **Minat Bakat** — ajukan & kelola bakat Anda |
+| 🏆 | **LTMI** — ikuti lomba Liga Talenta Mahasiswa Indonesia |
+| 💬 | **Forum** — diskusi dengan anggota KTMI |
 
-## Fitur Utama
+### 🏫 Untuk Pengelola
 
-### Keanggotaan & Identitas
-- Registrasi mahasiswa terhubung data PTS/kampus
-- **KTA digital** — nama, foto, nomor anggota, QR code
-- Verifikasi keanggotaan publik via `/verify/:kta`
-
-### Komunitas & Minat Bakat
-- Komunitas dengan filter minat bakat (maks. 3 bakat aktif per mahasiswa)
-- Aturan **satu komunitas per mahasiswa**
-- Pengajuan keluar komunitas dengan persetujuan TC
-
-### Pelatihan & Absensi
-- TC membuat jadwal training
-- Mahasiswa konfirmasi kehadiran; TC mencatat status absensi
-
-### LTMI (Liga Talenta Mahasiswa Indonesia)
-- Admin Kampus mengajukan proposal lomba + dokumen pendukung
-- Super Administrator memvalidasi (approve/reject)
-- Mahasiswa mendaftar ke lomba berstatus **OPEN**
-
-### Lainnya
-- **Forum** diskusi antar anggota
-- **Notifikasi** real-time
-- **Asisten KTMI** — chatbot bantuan berbasis knowledge base
-- **Pusat Bantuan** — FAQ per peran pengguna
-- **Command Palette** (`Ctrl+K`) untuk navigasi cepat
-- **Galeri Momen Kegiatan** di landing page
-- **Laporkan Bug** untuk feedback pengguna
+Dashboard terpusat untuk validasi pengajuan, kelola data mahasiswa & PTS, proposal lomba, jadwal training, e-reporting, serta administrasi sistem LLDIKTI.
 
 ---
 
-## Bagaimana Aplikasi Berjalan
+## 👥 Peran Pengguna
 
-### Arsitektur Sistem
+| Peran | Emoji | Deskripsi |
+|-------|-------|-----------|
+| **Mahasiswa** | 🎒 | Profil, KTA, komunitas, absensi, minat bakat, LTMI, forum |
+| **Admin Kampus** | 🏛️ | Kelola mahasiswa & komunitas, ajukan LTMI, validasi pengajuan |
+| **Training Community** | 📋 | Jadwal training, absensi, e-reporting, permintaan keluar komunitas |
+| **Super Administrator** | 🛡️ | Kelola user, PTS, LTMI, approval, TC, prestasi, laporan |
+
+> Setiap peran memiliki **dashboard & sidebar** yang disesuaikan dengan tanggung jawabnya.
+
+---
+
+## ✨ Fitur Utama
+
+<details>
+<summary><b>🪪 Keanggotaan & Identitas</b></summary>
+
+- 📝 Registrasi mahasiswa terhubung data PTS/kampus
+- 🪪 **KTA digital** — nama, foto, nomor anggota, QR code
+- 🔍 Verifikasi keanggotaan publik via `/verify/:kta`
+
+</details>
+
+<details>
+<summary><b>👥 Komunitas & Minat Bakat</b></summary>
+
+- 🎯 Komunitas dengan filter minat bakat
+- 📊 Maks. **3 bakat aktif** per mahasiswa
+- 1️⃣ Aturan **satu komunitas** per mahasiswa
+- 🚪 Pengajuan keluar komunitas (approval TC)
+
+</details>
+
+<details>
+<summary><b>📅 Pelatihan & Absensi</b></summary>
+
+- 📆 TC membuat jadwal training
+- ✅ Mahasiswa konfirmasi kehadiran
+- 📋 TC mencatat status: hadir, terlambat, izin, alpha
+
+</details>
+
+<details>
+<summary><b>🏆 LTMI — Liga Talenta Mahasiswa Indonesia</b></summary>
+
+- 📄 Admin Kampus mengajukan proposal + dokumen pendukung
+- ✔️ Super Administrator memvalidasi (approve / reject)
+- 🎯 Mahasiswa mendaftar ke lomba berstatus **OPEN**
+
+</details>
+
+<details>
+<summary><b>🚀 Fitur Tambahan</b></summary>
+
+| Fitur | Keterangan |
+|-------|------------|
+| 💬 **Forum** | Diskusi antar anggota |
+| 🔔 **Notifikasi** | Pemberitahuan real-time |
+| 🤖 **Asisten KTMI** | Chatbot bantuan berbasis knowledge base |
+| ❓ **Pusat Bantuan** | FAQ per peran pengguna |
+| ⌨️ **Ctrl+K** | Command palette navigasi cepat |
+| 📸 **Galeri Momen** | Slideshow kegiatan di landing page |
+| 🐛 **Laporkan Bug** | Feedback dari pengguna |
+
+</details>
+
+---
+
+## ⚙️ Bagaimana Aplikasi Berjalan
+
+### 🏗️ Arsitektur Sistem
 
 ```mermaid
 flowchart TB
-    subgraph Client["Browser / Pengguna"]
-        UI[React SPA - Vite]
+    subgraph Client["🖥️ Browser / Pengguna"]
+        UI["⚛️ React SPA · Vite"]
     end
 
-    subgraph Server["VPS Production"]
-        NGX[Nginx Reverse Proxy]
-        FE[Frontend Container<br/>Static files - dist]
-        BE[Backend Container<br/>Node.js Express API]
-        DB[(PostgreSQL)]
+    subgraph Server["☁️ VPS Production"]
+        NGX["🔀 Nginx"]
+        FE["📦 Frontend · Nginx"]
+        BE["🟢 Backend · Express API"]
+        DB[("🐘 PostgreSQL")]
     end
 
-    UI -->|HTTPS ktmi.my.id| NGX
+    UI -->|HTTPS| NGX
     NGX --> FE
     NGX -->|/api/*| BE
     BE --> DB
-    BE --> UP[Uploads / File Storage]
+    BE --> UP["📁 Uploads"]
 ```
 
-### Alur Singkat
+### 🔄 Alur Singkat
 
-1. **Pengguna** membuka `https://ktmi.my.id` di browser.
-2. **Frontend** (React) dimuat sebagai Single Page Application (SPA).
-3. Setiap aksi (login, daftar komunitas, upload dokumen, dll.) memanggil **REST API** di `/api`.
-4. **Backend** (Express.js) memproses request, autentikasi JWT, dan berinteraksi dengan **PostgreSQL**.
-5. File upload (foto profil, dokumen LTMI, laporan kegiatan) disimpan di folder `uploads` dan dilayani sebagai static file.
+```
+1. 👤 Pengguna buka ktmi.my.id
+2. ⚛️  Frontend React (SPA) dimuat di browser
+3. 📡 Setiap aksi → REST API /api
+4. 🟢 Backend Express + JWT → PostgreSQL
+5. 📁 Upload file → folder uploads
+```
 
-### Alur Bisnis Utama
+### 📊 Alur Bisnis Utama
 
 ```mermaid
 flowchart LR
-    A[Mahasiswa daftar] --> B[Ajukan minat bakat]
-    B --> C[Join komunitas]
-    C --> D[Absensi training]
-    D --> E[Daftar LTMI]
+    A["📝 Daftar"] --> B["⭐ Minat Bakat"]
+    B --> C["👥 Komunitas"]
+    C --> D["✅ Absensi"]
+    D --> E["🏆 LTMI"]
 
-    F[Admin Kampus] --> G[Ajukan proposal LTMI]
-    G --> H[Superadmin approve]
+    F["🏛️ Admin"] --> G["📄 Proposal LTMI"]
+    G --> H["✔️ Approve"]
     H --> E
 
-    I[TC] --> J[Jadwal & absensi]
-    I --> K[E-Reporting]
+    I["📋 TC"] --> J["📅 Jadwal"]
+    I --> K["📑 E-Reporting"]
 ```
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | Lapisan | Teknologi |
 |---------|-----------|
-| **Frontend** | React 19, TypeScript, Vite, Tailwind CSS, shadcn/ui, Framer Motion |
-| **Backend** | Node.js, Express.js, JWT, Multer |
-| **Database** | PostgreSQL |
-| **Deployment** | Docker, Docker Compose, Nginx |
-| **Keamanan** | Helmet, CORS, Rate limiting, bcrypt |
+| 🎨 **Frontend** | React 19 · TypeScript · Vite · Tailwind CSS · shadcn/ui |
+| ⚡ **Animasi** | Framer Motion |
+| 🟢 **Backend** | Node.js · Express.js · JWT · Multer |
+| 🐘 **Database** | PostgreSQL |
+| 🐳 **Deploy** | Docker · Docker Compose · Nginx |
+| 🔒 **Keamanan** | Helmet · CORS · Rate Limiting · bcrypt |
 
 ---
 
-## Lingkungan Aplikasi
+## 🌍 Lingkungan
 
-| Lingkungan | Keterangan |
-|------------|------------|
-| **Production** | `https://ktmi.my.id` — diakses publik oleh pengguna |
-| **Development** | Server lokal — Vite dev server + backend dev untuk pengujian fitur |
+| Lingkungan | URL / Keterangan |
+|------------|------------------|
+| 🌐 **Production** | [ktmi.my.id](https://ktmi.my.id) — akses publik |
+| 🔧 **Development** | Server lokal — Vite + backend dev |
 
-Frontend production di-build menjadi file statis (`dist/`) lalu dilayankan oleh container Nginx. Perubahan kode frontend **harus di-build ulang** agar tampil di production.
-
----
-
-## Keamanan & Privasi
-
-- Autentikasi berbasis **JWT** (JSON Web Token)
-- Password di-hash sebelum disimpan
-- Rate limiting pada endpoint API
-- Log sensitif dan data PII tidak ditampilkan di konsol production
-- CORS dikonfigurasi khusus domain production
+> 💡 Frontend production di-build ke `dist/` lalu dilayankan Nginx. Perubahan kode **harus di-build ulang** agar tampil live.
 
 ---
 
-## Dokumentasi Pendukung
+## 🔐 Keamanan & Privasi
 
-Panduan penggunaan (format PDF, standalone) tersedia untuk:
-
-- Cara mengajukan LTMI
-- Cara bergabung komunitas
-- Panduan per peran: Mahasiswa, Admin Kampus, TC, Super Administrator
-
----
-
-## Developer
-
-**Mhd Farhan Jafrad** — Developer & pengembang utama aplikasi KTMI
+- 🔑 Autentikasi **JWT**
+- 🔒 Password di-hash (**bcrypt**)
+- 🚦 Rate limiting pada API
+- 🛡️ Log sensitif & PII diamankan di production
+- 🌐 CORS dikonfigurasi untuk domain production
 
 ---
 
-## Catatan Repositori
+## 📚 Dokumentasi
 
-Repositori ini berisi **dokumentasi pengenalan** aplikasi KTMI. Source code lengkap tidak dipublikasikan di GitHub ini.
+Panduan penggunaan (PDF) tersedia untuk:
 
-Untuk informasi lebih lanjut mengenai penggunaan platform, silakan kunjungi [ktmi.my.id](https://ktmi.my.id) atau hubungi admin LLDIKTI Wilayah XVII.
+| 📄 Panduan | Isi |
+|-----------|-----|
+| 🏆 LTMI | Cara mengajukan proposal lomba |
+| 👥 Komunitas | Cara bergabung & syarat minat bakat |
+| 🎒 Mahasiswa | Panduan lengkap peran mahasiswa |
+| 🏛️ Admin Kampus | Kelola kampus & validasi |
+| 📋 TC | Training, absensi, e-reporting |
+| 🛡️ Superadmin | Administrasi sistem |
 
 ---
 
-## Lisensi & Hak Cipta
+## 👨‍💻 Developer
 
-© LLDIKTI Wilayah XVII — Komunitas Talenta Mahasiswa Indonesia (KTMI)
+<div align="center">
+
+**Mhd Farhan Jafrad**
+
+*Developer & Pengembang Utama — KTMI*
+
+</div>
+
+---
+
+## 📦 Catatan Repositori
+
+> ⚠️ Repositori ini berisi **dokumentasi & pengenalan** aplikasi KTMI.  
+> Source code lengkap **tidak dipublikasikan** di GitHub ini.
+
+Untuk menggunakan platform, kunjungi 👉 **[ktmi.my.id](https://ktmi.my.id)**
+
+---
+
+<div align="center">
+
+**© 2026 LLDIKTI Wilayah XVII — Komunitas Talenta Mahasiswa Indonesia**
+
+*Made with ❤️ for Indonesian student talent*
+
+</div>
