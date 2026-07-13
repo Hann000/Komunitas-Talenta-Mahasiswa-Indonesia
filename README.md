@@ -1,22 +1,21 @@
-<!--
-Add a project banner when it is ready, for example:
 <p align="center">
-  <img src="./Logo/ktmi-banner.png" alt="KTMI project banner" width="100%" />
+  <img src="./Logo/logo_KTMI2.png" alt="KTMI Logo" width="130" />
 </p>
--->
 
-<h1 align="center">KTMI — Komunitas Talenta Mahasiswa Indonesia</h1>
+<h1 align="center">🎓 KTMI — Komunitas Talenta Mahasiswa Indonesia</h1>
 
 <p align="center">
-  A production-deployed student talent management platform for LLDIKTI Region XVII.
+  <strong>Digital platform for student talent, communities, training, competitions, and membership management across LLDIKTI Region XVII.</strong>
 </p>
 
 <p align="center">
-  <a href="https://ktmi.my.id"><strong>Live Application</strong></a>
+  <a href="https://ktmi.my.id"><strong>🌐 Live Application</strong></a>
   ·
-  <a href="./PORTFOLIO-DOCUMENTATION.md"><strong>Technical Documentation</strong></a>
+  <a href="#-product-demo"><strong>🎬 Product Demo</strong></a>
   ·
-  <a href="https://github.com/Hann000"><strong>Developer Profile</strong></a>
+  <a href="./PORTFOLIO-DOCUMENTATION.md"><strong>📚 Technical Documentation</strong></a>
+  ·
+  <a href="https://github.com/Hann000"><strong>👨‍💻 Developer</strong></a>
 </p>
 
 <p align="center">
@@ -30,126 +29,181 @@ Add a project banner when it is ready, for example:
 
 ---
 
-## Overview
+## 🎬 Product Demo
 
-**KTMI** is a full-stack web platform that centralizes student talent administration across private universities coordinated by **LLDIKTI Region XVII**.
+<p align="center">
+  <img src="./docs/assets/demo/ktmi-demo.gif" alt="KTMI Application Demo" width="100%" />
+</p>
 
-The system replaces fragmented workflows—spreadsheets, paper forms, disconnected messaging groups, and manual approvals—with one role-based platform for:
+<p align="center">
+  <em>From student onboarding and digital membership cards to community management, attendance, LTMI competitions, and multi-level approvals.</em>
+</p>
 
-- student membership and profile management;
-- talent and interest submissions;
-- community membership;
-- training schedules and attendance;
-- LTMI competition proposals and registrations;
-- achievement verification;
-- digital membership cards with public QR verification;
-- multi-level reporting and approval workflows.
+> The live production application is available at **[ktmi.my.id](https://ktmi.my.id)**.
 
-This repository presents KTMI as a **portfolio case study**, focusing on the product problem, system architecture, engineering decisions, security model, and production deployment.
+---
 
-## Project at a Glance
+## 🚀 Project Overview
 
-| Area | Scope |
+**KTMI** is a production-deployed full-stack platform that centralizes student talent administration across private universities coordinated by **LLDIKTI Region XVII**.
+
+The platform replaces fragmented spreadsheets, paper forms, manual approvals, and disconnected messaging groups with a single role-based information system.
+
+| Portfolio Signal | Implementation |
 |---|---|
-| Product type | Multi-role student talent management system |
-| Primary users | Students, training coordinators, campus administrators, super administrators |
-| Access model | Four-role RBAC with campus-level data scoping |
-| Backend surface | Approximately 150 REST endpoints across 18 route modules |
-| Data model | 23+ PostgreSQL tables with UUID keys, constraints, indexes, and audit fields |
-| Authentication | Email OTP, JWT, and server-side sessions |
-| Infrastructure | Docker Compose, Nginx, PostgreSQL, production VPS |
-| Live deployment | [ktmi.my.id](https://ktmi.my.id) |
+| 🧑‍🤝‍🧑 Multi-role platform | Student, Training Coordinator, Campus Admin, and Superadmin |
+| 🔐 Access control | RBAC, campus-level data scoping, and ownership validation |
+| ⚙️ Backend scope | Approximately 150 REST endpoints across 18 route modules |
+| 🗄️ Data architecture | 23+ PostgreSQL tables with UUIDs, constraints, indexes, and audit fields |
+| 🪪 Digital identity | KTA membership card with public QR verification |
+| 🔔 Real-time updates | Server-Sent Events for notification delivery |
+| 🐳 Deployment | Docker Compose, Nginx, PostgreSQL, and production VPS |
+| 🌐 Production URL | [ktmi.my.id](https://ktmi.my.id) |
 
-## The Problem
+---
 
-Student activity administration across multiple campuses was difficult to monitor because data lived in separate spreadsheets, paper documents, and informal communication channels.
+## 🎯 The Problem
 
-The main operational issues were:
+Student activity administration across multiple campuses was difficult to monitor because operational data was distributed across spreadsheets, documents, paper forms, and informal communication channels.
 
-- no centralized view of students, communities, attendance, or competitions;
+The main issues were:
+
+- no centralized visibility into students, communities, attendance, and competitions;
 - slow proposal and approval processes;
 - weak traceability for administrative decisions;
 - difficult verification of membership and achievements;
-- inconsistent data access between institutional roles.
+- inconsistent access boundaries between campuses and institutional roles.
 
 KTMI addresses these issues through structured workflows, role-scoped dashboards, auditable approval records, and publicly verifiable digital credentials.
 
-## Core Capabilities
+---
 
-### Digital identity and onboarding
+## ✨ Core Features
+
+### 🪪 Digital identity and onboarding
 
 - Student registration with email OTP verification.
-- Secure login using JWT and server-side session validation.
+- Secure authentication using JWT and server-side sessions.
 - Automatically generated KTA membership numbers.
-- Digital membership card with QR-based public verification.
+- Digital membership cards with public QR verification.
 
-### Talent and community management
+### 🎨 Talent and community management
 
-- Talent and interest submissions with approval states.
+- Talent and interest submission workflows.
 - Maximum of three active talents per student.
 - Community discovery based on talent category.
 - One-community-per-student business rule.
 - Join and leave requests with role-specific approval.
 
-### Training and attendance
+### 📅 Training and attendance
 
 - Training schedule management by community coordinators.
 - Attendance statuses: present, absent, late, and excused.
 - Student attendance history.
 - Activity reports and periodic e-reporting.
 
-### LTMI competition workflow
+### 🏆 LTMI competition workflow
 
 - Competition proposal creation by campus administrators.
 - Proposal, budget, and timeline document uploads.
-- Superadmin approval and rejection with review notes.
+- Superadmin approval or rejection with review notes.
 - Student registration for open competitions.
 - Participant and registration approval management.
 
-### Reporting and communication
+### 📊 Reporting and communication
 
-- Role-specific dashboards and statistics.
+- Role-specific dashboards and analytics.
 - Two-level approval for selected submissions.
 - Achievement submission and verification.
-- Forum posts, comments, likes, and attachments.
-- Server-Sent Events for notification updates.
+- Forum posts, comments, likes, and media attachments.
+- Real-time notification updates using Server-Sent Events.
 
-## User Roles
+---
+
+## 🖼️ Application Preview
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="./docs/assets/screenshots/01-student-dashboard.png" alt="KTMI Student Dashboard" />
+    </td>
+    <td width="50%">
+      <img src="./docs/assets/screenshots/02-digital-kta.png" alt="KTMI Digital Membership Card" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Student Dashboard</strong></td>
+    <td align="center"><strong>Digital KTA & QR Verification</strong></td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="./docs/assets/screenshots/03-community-management.png" alt="KTMI Community Management" />
+    </td>
+    <td width="50%">
+      <img src="./docs/assets/screenshots/04-training-attendance.png" alt="KTMI Training Attendance" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Community Management</strong></td>
+    <td align="center"><strong>Training & Attendance</strong></td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="./docs/assets/screenshots/05-ltmi-approval.png" alt="KTMI LTMI Approval Workflow" />
+    </td>
+    <td width="50%">
+      <img src="./docs/assets/screenshots/06-superadmin-dashboard.png" alt="KTMI Superadmin Dashboard" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>LTMI Approval Workflow</strong></td>
+    <td align="center"><strong>Superadmin Analytics</strong></td>
+  </tr>
+</table>
+
+---
+
+## 👥 User Roles
 
 | Capability | Student | Training Coordinator | Campus Admin | Superadmin |
 |---|:---:|:---:|:---:|:---:|
-| Manage own profile | ✓ | ✓ | ✓ | ✓ |
-| View digital KTA | ✓ | — | — | — |
-| Submit talents and achievements | ✓ | — | — | — |
-| Join a community | ✓ | — | — | — |
-| Manage training and attendance | — | ✓ | — | — |
-| Submit reports | — | ✓ | — | — |
-| Manage campus-scoped data | — | — | ✓ | — |
-| Submit LTMI proposals | — | — | ✓ | — |
-| Approve final proposals | — | — | — | ✓ |
-| Manage global users and PTS data | — | — | — | ✓ |
+| Manage own profile | ✅ | ✅ | ✅ | ✅ |
+| View digital KTA | ✅ | — | — | — |
+| Submit talents and achievements | ✅ | — | — | — |
+| Join a community | ✅ | — | — | — |
+| Manage training and attendance | — | ✅ | — | — |
+| Submit activity reports | — | ✅ | — | — |
+| Manage campus-scoped data | — | — | ✅ | — |
+| Submit LTMI proposals | — | — | ✅ | — |
+| Approve final proposals | — | — | — | ✅ |
+| Manage global users and PTS data | — | — | — | ✅ |
 
-Authorization is enforced at two levels:
+Authorization is enforced through:
 
-1. **Endpoint-level access** through reusable role middleware.
-2. **Row-level data scoping** so campus administrators only access records belonging to their institution.
+1. **Endpoint-level access control** using reusable role middleware.
+2. **Data-level scoping** that restricts campus administrators to records belonging to their institution.
+3. **Ownership checks** for user-generated content and submissions.
 
-## My Role
+---
 
-I designed and implemented KTMI as a full-stack project, covering:
+## 👨‍💻 My Role
 
-- requirements analysis and workflow modeling;
+I designed and implemented KTMI as an end-to-end full-stack project, covering:
+
+- requirements analysis and institutional workflow modeling;
 - frontend architecture and role-specific interfaces;
 - REST API design and backend implementation;
-- relational database design and migrations;
+- relational database design and versioned migrations;
 - authentication, authorization, and session management;
 - Docker and Nginx production deployment;
 - security hardening and operational documentation;
 - user guides and technical documentation.
 
-The project demonstrates end-to-end ownership: converting institutional processes into software rules, shipping the system, and maintaining it in a production environment.
+This project demonstrates full product ownership—from translating real administrative processes into software rules to deploying and maintaining the application in production.
 
-## System Architecture
+---
+
+## 🏗️ System Architecture
 
 ```mermaid
 flowchart LR
@@ -166,13 +220,15 @@ flowchart LR
 
 ### Request flow
 
-1. The React client sends requests to the API using a Bearer token.
-2. Nginx routes frontend traffic and proxies `/api` requests to Express.
-3. The authentication middleware validates the JWT, session record, account status, and role.
+1. The React client sends API requests using a Bearer token.
+2. Nginx serves the frontend and proxies `/api` traffic to Express.
+3. Authentication middleware validates the JWT, session, account status, and role.
 4. Route handlers apply campus or ownership scoping before querying PostgreSQL.
 5. Approval actions generate auditable records and user notifications.
 
-## Technology Stack
+---
+
+## 🛠️ Technology Stack
 
 | Layer | Technologies |
 |---|---|
@@ -185,101 +241,81 @@ flowchart LR
 | Infrastructure | Docker Compose, Nginx, Ubuntu VPS |
 | Security middleware | Helmet, CORS, rate limiting, compression |
 
-## Selected Engineering Decisions
+---
+
+## 🧠 Selected Engineering Decisions
 
 ### Hybrid JWT and server-side sessions
 
-JWT provides efficient stateless verification, while the session table adds immediate revocation, expiration tracking, client metadata, and account-status enforcement. This prevents a deactivated account from remaining active until its token naturally expires.
+JWT provides efficient request verification, while the session table enables immediate revocation, expiration tracking, client metadata, and account-status enforcement.
 
-### Workflow state machines
+### Explicit workflow state machines
 
-Several modules model real administrative processes as explicit state transitions instead of simple CRUD records. Examples include:
+Administrative processes are represented as controlled status transitions rather than simple CRUD operations. Examples include:
 
 - LTMI proposals: `draft → pending → open/rejected → closed/completed`;
 - talent submissions and change requests;
-- two-stage approval for selected coordinator submissions;
+- two-stage approval for coordinator submissions;
 - achievement verification and competition registration review.
 
 ### Database-enforced business rules
 
-Critical rules are not left solely to the interface. The database uses foreign keys, unique constraints, check constraints, and indexed relationships to prevent duplicate registrations and preserve data integrity.
+Critical rules are protected using foreign keys, unique constraints, check constraints, indexed relationships, and audit fields. Validation is therefore not dependent solely on the frontend.
 
 ### Role and campus scoping
 
-Role authorization alone is insufficient for a multi-campus platform. Campus administrators are restricted to their institution's records at query level, while superadmins retain cross-campus access.
+Role authorization alone is insufficient for a multi-campus platform. Campus administrators are restricted to institution-specific records at query level, while superadmins retain cross-campus access.
 
-## Security
+---
+
+## 🔒 Security
 
 - Password hashing with bcrypt.
 - OTP verification before student account creation.
 - JWT signature and expiration validation.
 - Server-side session checks and logout invalidation.
-- Role allow-lists and ownership checks.
-- Campus-level data isolation.
+- Role allow-lists, ownership checks, and campus-level isolation.
 - Parameterized PostgreSQL queries.
-- CORS origin allow-list.
-- Helmet security headers.
+- CORS origin allow-list and Helmet security headers.
 - API rate limiting behind Nginx.
 - File type and size restrictions for uploads.
 - Environment-based secret management.
 
-## Product Preview
+---
 
-Screenshots should show the product rather than the repository page. The most useful portfolio sequence is:
-
-1. landing page and authentication;
-2. student dashboard and digital KTA;
-3. community and talent workflow;
-4. training attendance interface;
-5. LTMI proposal and approval flow;
-6. superadmin analytics dashboard;
-7. responsive mobile views.
-
-<!--
-Recommended gallery structure after screenshots are added:
-
-<table>
-  <tr>
-    <td><img src="./docs/assets/screenshots/student-dashboard.png" alt="Student dashboard" /></td>
-    <td><img src="./docs/assets/screenshots/digital-kta.png" alt="Digital KTA" /></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Student Dashboard</strong></td>
-    <td align="center"><strong>Digital Membership Card</strong></td>
-  </tr>
-</table>
--->
-
-## Engineering Challenges
+## 🧩 Engineering Challenges
 
 - Translating multi-level institutional approvals into consistent state transitions.
 - Combining JWT convenience with server-side revocation.
-- Enforcing campus boundaries in a shared database.
+- Enforcing campus boundaries in a shared relational database.
 - Handling rate limiting correctly behind an Nginx reverse proxy.
 - Keeping frontend and backend environment configuration safe across local and production builds.
-- Designing a schema that supports auditability without blocking future feature expansion.
+- Designing an auditable schema without blocking future feature expansion.
 
-## Current Limitations and Roadmap
+---
 
-The largest remaining engineering gaps are:
+## 🗺️ Roadmap
 
-- automated unit, integration, and end-to-end testing;
-- CI/CD through GitHub Actions;
-- OpenAPI/Swagger documentation;
-- centralized backend request validation;
-- object storage for uploaded files;
-- Redis-backed session and rate-limit infrastructure;
-- formal audit logs for privileged actions.
+- [ ] Unit, integration, and end-to-end automated tests.
+- [ ] GitHub Actions CI/CD pipeline.
+- [ ] OpenAPI/Swagger API documentation.
+- [ ] Centralized backend request validation.
+- [ ] Object storage for uploaded files.
+- [ ] Redis-backed sessions and rate limiting.
+- [ ] Formal audit logs for privileged actions.
 
-These items are intentionally documented because they represent the next steps required to improve reliability, maintainability, and scalability.
+---
 
-## Documentation
-
-The complete technical package contains feature documentation, API summaries, database relationships, deployment details, security notes, and a repository audit:
+## 📚 Documentation
 
 - [Live Application](https://ktmi.my.id)
 
-## Author
+---
+
+
+---
+
+## 👤 Author
 
 **Mhd Farhan Jafrad**  
 GitHub: [@Hann000](https://github.com/Hann000)
@@ -287,5 +323,5 @@ GitHub: [@Hann000](https://github.com/Hann000)
 ---
 
 <p align="center">
-  Built as an end-to-end full-stack engineering project for real institutional workflows.
+  <strong>Built as an end-to-end full-stack engineering project for real institutional workflows.</strong>
 </p>
