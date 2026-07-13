@@ -122,45 +122,95 @@ KTMI addresses these issues through structured workflows, role-scoped dashboards
 
 ## 🖼️ Application Preview
 
+## 📸 Application Preview
+
+## 📸 Application Preview
+
 <table>
   <tr>
-    <td width="50%">
-      <img src="./docs/assets/screenshots/01-student-dashboard.png" alt="KTMI Student Dashboard" />
+    <td width="50%" align="center">
+      <img
+        src="docs/assets/screenshots/01-student-dashboard.png"
+        alt="Student Dashboard"
+        width="100%"
+      />
+      <br />
+      <b>🎓 Student Dashboard</b>
     </td>
-    <td width="50%">
-      <img src="./docs/assets/screenshots/02-digital-kta.png" alt="KTMI Digital Membership Card" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Student Dashboard</strong></td>
-    <td align="center"><strong>Digital KTA & QR Verification</strong></td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img src="./docs/assets/screenshots/03-community-management.png" alt="KTMI Community Management" />
-    </td>
-    <td width="50%">
-      <img src="./docs/assets/screenshots/04-training-attendance.png" alt="KTMI Training Attendance" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Community Management</strong></td>
-    <td align="center"><strong>Training & Attendance</strong></td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img src="./docs/assets/screenshots/05-ltmi-approval.png" alt="KTMI LTMI Approval Workflow" />
-    </td>
-    <td width="50%">
-      <img src="./docs/assets/screenshots/06-superadmin-dashboard.png" alt="KTMI Superadmin Dashboard" />
+    <td width="50%" align="center">
+      <img
+        src="docs/assets/screenshots/02-digital-kta.png"
+        alt="Digital Membership Card"
+        width="100%"
+      />
+      <br />
+      <b>🪪 Digital Membership Card</b>
     </td>
   </tr>
+
   <tr>
-    <td align="center"><strong>LTMI Approval Workflow</strong></td>
-    <td align="center"><strong>Superadmin Analytics</strong></td>
+    <td width="50%" align="center">
+      <img
+        src="docs/assets/screenshots/03-community-management.png"
+        alt="Community Management"
+        width="100%"
+      />
+      <br />
+      <b>👥 Community Management</b>
+    </td>
+    <td width="50%" align="center">
+      <img
+        src="docs/assets/screenshots/04-training-attendance.png"
+        alt="Training and Attendance"
+        width="100%"
+      />
+      <br />
+      <b>📅 Training & Attendance</b>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center">
+      <img
+        src="docs/assets/screenshots/05-ltmi-approval.png"
+        alt="LTMI Approval Workflow"
+        width="100%"
+      />
+      <br />
+      <b>🏆 LTMI Approval Workflow</b>
+    </td>
+    <td width="50%" align="center">
+      <img
+        src="docs/assets/screenshots/06-superadmin-dashboard.png"
+        alt="Superadmin Dashboard"
+        width="100%"
+      />
+      <br />
+      <b>📊 Superadmin Dashboard</b>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center">
+      <img
+        src="docs/assets/screenshots/07-landing-page.png"
+        alt="KTMI Landing Page"
+        width="100%"
+      />
+      <br />
+      <b>🏠 Landing Page</b>
+    </td>
+    <td width="50%" align="center">
+      <img
+        src="docs/assets/screenshots/08-ai-chatbot.png"
+        alt="KTMI AI Chatbot"
+        width="100%"
+      />
+      <br />
+      <b>🤖 KTMI AI Chatbot</b>
+    </td>
   </tr>
 </table>
-
 ---
 
 ## 👥 User Roles
