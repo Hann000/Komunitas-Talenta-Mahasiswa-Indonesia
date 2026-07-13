@@ -120,10 +120,6 @@ KTMI addresses these issues through structured workflows, role-scoped dashboards
 
 ---
 
-## 🖼️ Application Preview
-
-## 📸 Application Preview
-
 ## 📸 Application Preview
 
 <table>
